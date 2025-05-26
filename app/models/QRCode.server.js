@@ -1,5 +1,6 @@
+import qrcode from "qrcode";
+import invariant from "tiny-invariant";
 import db from "../db.server";
-
 // 引数 id に対応する QRコードをデータベースから1件取り出す
 export async function getQRcode(id, graphql) {
   const qrCode = await db.qrCode.findFirst({
@@ -29,4 +30,8 @@ export async function getQRcodes(shop, graphql) {
   );
 }
 
-
+// QRコード画像を取得する
+export function getQRcodeImage(id) {
+  const url = new URL(`qrcodes/${id}/scan`, process.env.SHOPIFY_APP_URL);
+  return qrcode.toDataURL(url.href);
+}
