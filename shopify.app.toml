@@ -3,7 +3,7 @@
 client_id = "5911e47f9f94cc2ce2990a09d8e4759a"
 name = "test-app"
 handle = "test-app-12143"
-application_url = "https://version-trash-seats-reviewed.trycloudflare.com"
+application_url = "https://molecules-briefing-trek-admissions.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://version-trash-seats-reviewed.trycloudflare.com/auth/callback",
-  "https://version-trash-seats-reviewed.trycloudflare.com/auth/shopify/callback",
-  "https://version-trash-seats-reviewed.trycloudflare.com/api/auth/callback"
+  "https://molecules-briefing-trek-admissions.trycloudflare.com/auth/callback",
+  "https://molecules-briefing-trek-admissions.trycloudflare.com/auth/shopify/callback",
+  "https://molecules-briefing-trek-admissions.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
